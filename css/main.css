@@ -53,6 +53,25 @@ h2 {
     font-size: 50px;
 }
 
+.dark {
+    background-color: black;
+    color: #fff;
+}
+
+button {
+    padding: 7px;
+    border-radius: 14px;
+    border: none;
+}
+
+button:hover {
+    background-color: darkcyan;
+}
+
+button:active {
+    background-color: darkgray;
+}
+
 .js-list {
     list-style-type: none;
     display: flex;
@@ -85,7 +104,7 @@ li {
     width: 23%;
     padding: 10px;
     background-color: silver;
-    border: 2px solid whitesmoke;
+    border: 2px solid darkseagreen;
     border-radius: 14px;
 }
 

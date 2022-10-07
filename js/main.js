@@ -1,6 +1,9 @@
 const elList = document.querySelector('.js-list');
 const elSelect = document.querySelector('.js-select');
 const elSelec = document.querySelector('.js-selec');
+const elBtn = document.querySelector('.js-btn');
+const elItem = document.querySelector('li');
+var theme = false;
 
 function domWiew(array, node) {
 	array.forEach((el) => {
@@ -105,3 +108,18 @@ elSelec.addEventListener('change', function () {
 
 	domWiew(newArr, elList);
 });
+
+elBtn.addEventListener('click', function () {
+	theme = !theme;
+	window.localStorage.setItem('theme', theme ? 'dark' : 'light');
+	changeThem();
+});
+
+function changeThem() {
+	if (window.localStorage.getItem('theme') == 'dark') {
+		document.body.classList.add('dark');
+	} else {
+		document.body.classList.remove('dark');
+	}
+}
+changeThem();
