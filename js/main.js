@@ -2,7 +2,6 @@ const elList = document.querySelector('.js-list');
 const elSelect = document.querySelector('.js-select');
 const elSelec = document.querySelector('.js-selec');
 const elBtn = document.querySelector('.js-btn');
-const elItem = document.querySelector('li');
 var theme = false;
 
 function domWiew(array, node) {
